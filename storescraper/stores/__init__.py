@@ -339,6 +339,7 @@ from .tienda_movistar import TiendaMovistar
 from .tienda_monge import TiendaMonge
 from .tienda_smart import TiendaSmart
 from .tienda_toyotomi import TiendaToyotomi
+from .tiendas_amal import TiendasAmal
 from .travel_tienda import TravelTienda
 from .travim import Travim
 from .trulu_store import TruluStore
