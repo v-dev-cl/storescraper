@@ -164,6 +164,7 @@ from .jumbo_colombia import JumboColombia
 from .jumbo_store import JumboStore
 from .kabum import Kabum
 from .kalunga import Kalunga
+from .kessinger import Kessinger
 from .kill_store import KillStore
 from .kraken_store import KrakenStore
 from .kuhn import Kuhn
