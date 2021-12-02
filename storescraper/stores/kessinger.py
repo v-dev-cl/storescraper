@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from storescraper.categories import GAMING_CHAIR, HEADPHONES, STEREO_SYSTEM, \
     MOUSE, KEYBOARD, COMPUTER_CASE, MONITOR, SOLID_STATE_DRIVE, \
     STORAGE_DRIVE, POWER_SUPPLY, RAM, MOTHERBOARD, PROCESSOR, VIDEO_CARD, \
-    CPU_COOLER
+    CPU_COOLER, WEARABLE, TELEVISION
 from storescraper.product import Product
 from storescraper.store import Store
 from storescraper.utils import session_with_proxy, remove_words
@@ -31,12 +31,16 @@ class Kessinger(Store):
             PROCESSOR,
             VIDEO_CARD,
             CPU_COOLER,
+            WEARABLE,
+            TELEVISION,
         ]
 
     @classmethod
     def discover_urls_for_category(cls, category, extra_args=None):
         url_extensions = [
             ['sillas-gamers', GAMING_CHAIR],
+            ['sillas-gamers-rgb', GAMING_CHAIR],
+            ['kessinger', GAMING_CHAIR],
             ['audifonos', HEADPHONES],
             ['parlantes', STEREO_SYSTEM],
             ['mouse', MOUSE],
@@ -51,6 +55,8 @@ class Kessinger(Store):
             ['procesadores', PROCESSOR],
             ['tarjetas-graficas', VIDEO_CARD],
             ['refrigeracion-y-ventiladores', CPU_COOLER],
+            ['smartband', WEARABLE],
+            ['tv', TELEVISION],
         ]
 
         session = session_with_proxy(extra_args)
